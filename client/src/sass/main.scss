@@ -1,0 +1,120 @@
+$primary-color: #8739f9;
+$secondary-color: #f2f4f4;
+$accent: #3789f1;
+
+
+.header {
+    font-size: 2em;
+    padding: .1em;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    height: 100vh;
+    background-color: $secondary-color;
+    color: black;
+    overflow: hidden;
+
+    button {
+        padding: .2em;
+        font-size: 1.2em;
+        height: 2.5em;
+        width: 4em;
+        border-radius: 5px;
+    }
+}
+
+.box {
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    padding: 1.5em;
+
+    .inputs {
+        width: 600px;
+
+        input[type=text] {
+            width: 405px;
+            font-size: 2em;
+            padding: .1em .5em;
+        }
+
+        .add-input,
+        .update-input {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .add-input h4,
+        .update-input h4 {
+            width: 100%;
+            font-size: 2em;
+            padding: 0;
+            margin: .2em;
+        }
+    }
+
+    .box-item {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 600px;
+        margin: .5em 0;
+
+        .items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1em;
+
+            p {
+                font-size: 1.5em;
+                margin: .5em;
+                width: 67%;
+                text-align: left;
+            }
+        }
+    }
+
+    .update {
+        background-color: turquoise;
+    }
+
+    .update:hover,
+    #add {
+        cursor: pointer;
+        background-color: rgba(191, 243, 238, 0.884)
+    }
+
+    .delete,
+    #clear-all {
+        background-color: tomato;
+    }
+
+    .delete:hover,
+    #cancel:hover,
+    #clear-all:hover {
+        cursor: pointer;
+        background-color: rgba(243, 121, 99, 0.973);
+    }
+
+    #cancel {
+        background-color: tomato;
+        border: 3px solid rgba(153, 26, 4, 0.733);
+    }
+
+    #update,
+    #add {
+        border: 3px solid rgb(1, 92, 83);
+    }
+
+    #add {
+        background-color: aquamarine;
+    }
+
+    #clear-all {
+        width: 5em;
+    }
+}
