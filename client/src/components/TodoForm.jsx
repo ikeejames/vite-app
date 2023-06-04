@@ -114,7 +114,6 @@ const InputWithLabel = (props) => {
 
     return (
         <div className="box">
-            <h2>{server_url}</h2>
             <div className="inputs">
                 {isUpdate ? (<UpdateInput
                     updateValue={updateValue}
