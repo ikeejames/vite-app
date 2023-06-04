@@ -20,7 +20,7 @@ const InputWithLabel = (props) => {
 
     const { toDo, onChange } = props;
     // const server = import.meta.env.SERVER_URL;
-    const server_url = import.meta.env.VITE_SERVER_URL;
+    const server_url = 'https://vite-app-backend.onrender.com'
 
     const onAddTodo = async () => {
         if (inputValue.trim() !== "") {
@@ -114,8 +114,6 @@ const InputWithLabel = (props) => {
 
     return (
         <div className="box">
-            <h4>{server_url}</h4>
-            <h3>Hello</h3>
             <div className="inputs">
                 {isUpdate ? (<UpdateInput
                     updateValue={updateValue}
