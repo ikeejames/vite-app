@@ -107,7 +107,7 @@ const InputWithLabel = (props) => {
     }
 
     useEffect(() => {
-        Axios.get('http://localhost:3001/todo/retrieve')
+        Axios.get(`${server_url}/todo/retrieve`)
             .then(res => onChange(res.data))
             .catch((err) => console.log(err));
     }, [updateValue]);
