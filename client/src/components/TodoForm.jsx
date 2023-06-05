@@ -19,8 +19,8 @@ const InputWithLabel = (props) => {
     const [isUpdate, setIsUpdate] = useState(false);
 
     const { toDo, onChange } = props;
-    // const server = import.meta.env.SERVER_URL;
-    const server_url = 'https://vite-app-backend.onrender.com'
+    const server_url = import.meta.env.SERVER_URL;
+    // const server_url = 'https://vite-app-backend.onrender.com'
 
     const onAddTodo = async () => {
         if (inputValue.trim() !== "") {
