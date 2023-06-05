@@ -19,7 +19,7 @@ const InputWithLabel = (props) => {
     const [isUpdate, setIsUpdate] = useState(false);
 
     const { toDo, onChange } = props;
-    const server_url = import.meta.env.SERVER_URL;
+    const server_url = import.meta.env.VITE_SERVER_URL;
     // const server_url = 'https://vite-app-backend.onrender.com'
 
     const onAddTodo = async () => {
